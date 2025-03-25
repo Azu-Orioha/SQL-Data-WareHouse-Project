@@ -18,10 +18,16 @@ This project aims to develop a modern data warehouse using SQL Server to consoli
  
   
 ## SCOPE
-Focus on the latest Datasets only 
+The focus will be on the most recent datasets to ensure relevance and applicability of the analytical insights. Historical data may be considered if it adds significant value to the analysis.
 
 ## DOCUMENTATION
-Provide clear documentation of the data model to support both buisness stakeholder and analytical teams.
+Comprehensive documentation will be provided, including:​
+
+Data Dictionary: Detailed descriptions of all tables, columns, data types, and relationships.​
+
+Entity-Relationship Diagrams (ERDs): Visual representations of the data model to aid understanding.​
+
+Process Documentation: Step-by-step guides on data extraction, transformation, loading (ETL) processes, and analytical query examples.
 
 # PHASE 2
 
