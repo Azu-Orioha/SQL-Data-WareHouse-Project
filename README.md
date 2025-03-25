@@ -40,7 +40,8 @@ Process Documentation: Step-by-step guides on data extraction, transformation, l
 
 
 
- Technologies Used
+## TECHNOLOGIES USED 
+
 SQL Server: Database management system for data storage and querying.​
 SQL Server Integration Services (SSIS): Tool for building ETL processes.​
 SQL Server Analysis Services (SSAS): Platform for data analysis and building analytical models.
