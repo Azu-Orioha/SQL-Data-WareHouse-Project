@@ -6,11 +6,16 @@
 This project aims to develop a modern data warehouse using SQL Server to consolidate sales data from multiple sources. The solution will facilitate analytical reporting and support informed decision-making by providing a unified data model optimized for complex queries and analysis.
 
 ## SPECIFICATION:
- Data Source: Import data from two sources systems (ERP and CRM) provided as CSV files.
+ Data Source: 
+ Import and consolidate data from two primary source systems—Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM)—provided as CSV files.
  
- Data Quality: Cleanse and resolve data quality issues prior to analysis. 
+ Data Quality: 
+ Cleanse and resolve data quality issues to ensure accuracy and reliability prior to analysis.
  
- Integration: Combine both sourvces into a single, user friendly data model designed for analytical queries.
+ Integration: 
+ Design and implement a user-friendly data model that integrates both sources, facilitating efficient analytical queries.
+ 
+ 
   
 ## SCOPE
 Focus on the latest Datasets only 
