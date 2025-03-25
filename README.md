@@ -34,7 +34,9 @@ Process Documentation: Step-by-step guides on data extraction, transformation, l
 ## OBJECTIVE :
  Develop SQL based analytics to deliver detailed insights into 
  (1) Customer behaviour
+ 
  (2) Product performance
+ 
  (3) Sales trends.
 
 
@@ -43,7 +45,9 @@ Process Documentation: Step-by-step guides on data extraction, transformation, l
 ## TECHNOLOGIES USED 
 
 SQL Server: Database management system for data storage and querying.​
+
 SQL Server Integration Services (SSIS): Tool for building ETL processes.​
+
 SQL Server Analysis Services (SSAS): Platform for data analysis and building analytical models.
 
 
