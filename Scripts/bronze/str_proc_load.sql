@@ -1,3 +1,24 @@
+/*
+================================================================================
+PROCEDURE: bronze.load_bronze
+PURPOSE: Loads data from CSV files into bronze layer tables in the database.
+         Handles both CRM (cust_info, prd_info, sales_details) and ERP 
+         (cust_az12, loc_a101, px_cat_g1v2) source systems.
+OPERATION:
+    - Truncates target tables before loading
+    - Uses BULK INSERT for efficient data loading
+    - Provides detailed logging of operation timing
+    - Includes error handling for load failures
+DEPENDENCIES: 
+    - CSV files must exist in specified paths
+    - Target tables must exist in bronze schema
+AUTHOR: Azubuike Orioha
+CREATED: [26-March 2025]
+================================================================================
+*/
+
+
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
