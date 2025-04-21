@@ -1,3 +1,10 @@
+2:00:00
+
+
+6 Tables
+
+
+
 -- check if the table already exists, if so drop it
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL 
 Drop TABLE bronze.crm_cust_info
