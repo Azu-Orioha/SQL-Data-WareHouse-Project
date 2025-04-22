@@ -6,18 +6,19 @@
 
 
 -- check if the table already exists, if so drop it
-IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL 
-Drop TABLE bronze.crm_cust_info
+IF OBJECT_ID ('silver.crm_cust_info', 'U') IS NOT NULL 
+Drop TABLE silver.crm_cust_info
 
--- create table bronze.crm_cust_info
-CREATE TABLE bronze.crm_cust_info(
+-- create table silver.crm_cust_info
+CREATE TABLE silver.crm_cust_info(
 	cst_id INT,
 	cst_key NVARCHAR(50),
 	cst_firstname NVARCHAR(50),
 	cst_lastname NVARCHAR(50),
 	cst_material_status NVARCHAR(50),
 	cst_gndr NVARCHAR(50),
-	cst_create_date DATE);
+	cst_create_date DATE)
+	dwh_create_date DATETME2 DEFAULT GETDATE();
 
 
 
