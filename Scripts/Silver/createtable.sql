@@ -23,7 +23,7 @@ CREATE TABLE silver.crm_cust_info(
 
 
 -- check if the table already exists, if so drop it
-IF OBJECT_ID ('bronze.crm_sales_details', 'U') IS NOT NULL 
+IF OBJECT_ID ('silver.crm_sales_details', 'U') IS NOT NULL 
 Drop TABLE bronze.crm_sales_details
 
 -- create table bronze.crm_sales_details
