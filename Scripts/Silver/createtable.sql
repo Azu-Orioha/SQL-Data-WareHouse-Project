@@ -1,11 +1,3 @@
-2:00:00
-
-
-6 Tables
-	
-
-
-
 -- check if the table already exists, if so drop it
 IF OBJECT_ID ('silver.crm_cust_info', 'U') IS NOT NULL 
 Drop TABLE silver.crm_cust_info
@@ -37,7 +29,8 @@ CREATE TABLE silver.crm_sales_details(
 	sls_due_dt INT,
 	sls_sales INT,
 	sls_quantity INT,
-	sls_price INT);
+	sls_price INT)
+	dwh_create_date DATETME2 DEFAULT GETDATE();
 
 
 
@@ -54,7 +47,9 @@ CREATE TABLE silver.crm_prd_info(
 	prd_cost INT,
 	prd_line NVARCHAR(50),
 	prd_start_dt DATETIME,
-	prd_end_dt DATETIME,);
+	prd_end_dt DATETIME,)
+	dwh_create_date DATETME2 DEFAULT GETDATE();
+
 
 -- check if the table already exists, if so drop it
 IF OBJECT_ID ('silver.erp_loc_a101', 'U') IS NOT NULL
@@ -63,7 +58,8 @@ Drop TABLE silver.erp_loc_a101
 -- create table silver.erp_loc_a101	
 CREATE TABLE silver.erp_loc_a101(
 	cid NVARCHAR(50),
-	cntry NVARCHAR(50));
+	cntry NVARCHAR(50))
+	dwh_create_date DATETME2 DEFAULT GETDATE();
 
 
 -- check if the table already exists, if so drop it
@@ -74,7 +70,8 @@ Drop TABLE silver.erp_cust_az12
 CREATE TABLE silver.erp_cust_az12(
 	cid NVARCHAR(50),
 	bdate DATE,
-	gen NVARCHAR(50));
+	gen NVARCHAR(50))
+	dwh_create_date DATETME2 DEFAULT GETDATE();
 
 
 -- check if the table already exists, if so drop it
@@ -86,4 +83,5 @@ CREATE TABLE silver.erp_px_cat_g1v2(
 	cid NVARCHAR(50),
 	cat NVARCHAR(50),
 	subcat NVARCHAR(50),
-	maintenance NVARCHAR(50));
+	maintenance NVARCHAR(50))
+	dwh_create_date DATETME2 DEFAULT GETDATE();
